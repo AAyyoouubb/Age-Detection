@@ -1,0 +1,6 @@
+torch
+pytorch_lightning
+PIL
+h5py
+cv2
+dlibts
