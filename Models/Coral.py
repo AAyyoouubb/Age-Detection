@@ -11,8 +11,8 @@ class LinearShared(nn.Module):
     def __init__(self, in_units, out_units):
         super().__init__()
 
-        self.w = nn.Parameter(torch.rand(in_units, 1), requires_grad=True)
-        self.b = nn.Parameter(2 * torch.randn(1, out_units), requires_grad=True)
+        self.w = nn.Parameter(torch.rand(in_units, 1))
+        self.b = nn.Parameter(2 * torch.randn(1, out_units))
 
     def forward(self, x):
         x = x @ self.w
